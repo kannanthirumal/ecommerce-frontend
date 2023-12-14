@@ -11,6 +11,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/common.css" />
   </head>
   <body>
     <div id="loginPage">
@@ -24,7 +26,7 @@
       <div class="container">
         <div class="row">
           <h2 class="home-title text-center">Welcome to Ecommerce</h2>
-          <div class="login-wrapper" id="login-wrapper">
+          <div class="login-wrapper" id="login-form">
             <h4 class="text-center">Login</h4>
             <div class="input-group">
               <input
@@ -43,8 +45,11 @@
               />
             </div>
             <div class="input-group">
-              <button id="loginButton" class="form-control btn btn-primary">
-                Login as a User
+              <button
+                id="loginButton"
+                class="login-button form-control btn btn-primary"
+              >
+                Login as User
               </button>
             </div>
             <div
@@ -52,6 +57,40 @@
               class="signup-button text-center text-info"
             >
               Don't Have an Account? SignUp
+            </div>
+          </div>
+
+          <div class="login-wrapper" id="signup-form">
+            <h4 class="text-center">SignUp</h4>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="username"
+                id="signupUsername"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="password"
+                id="signupPassword"
+              />
+            </div>
+            <div class="input-group">
+              <button
+                id="signupButton"
+                class="signup-button form-control btn btn-primary"
+              >
+                Signup as User
+              </button>
+            </div>
+            <div
+              id="showLoginButton"
+              class="login-button text-center text-info"
+            >
+              Already have an account? Login
             </div>
           </div>
         </div>
